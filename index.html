@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixIt - Banking Management System</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,300,500&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script>
+      function gotoPage(link){
+        window.location=link;
+      }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/Ter.svg" alt="Logo">
+                    </a>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <ul class="nav-menu">
+                        <li><a href="#c">Contact</a></li>
+                    </ul>
+                    <a href="about.html" class="btn btn-outline" style="display: none;">About Us</a>
+                    <button class="mobile-menu-btn">
+                        <svg width="51" height="51" viewBox="0 0 56 56" fill="none">
+                            <rect width="56" height="56" rx="28" fill="#b2e600"></rect>
+                            <path d="M37 32H19M37 24H19" stroke="black" stroke-width="1.5" stroke-linecap="round"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="hero">
+                <div class="hero-content">
+                  <span class="badge">You Are The Solution</span>
+                  <div class="bg-container">
+                    <img src="template-assets/images/application-section/lines2.png" alt="" >
+                    <h1 class="hero-title">The platform that solves problems</h1>
+                  </div>
+                </div>
+                <div class="hero-image">
+                    <!--<img src="template-assets/images/headers/card-half.png" alt="Banking Card">!-->
+                </div>
+            </div>
+        </div>
+    </header>
+
+            <div class="section-header">
+                <p class="section-subtitle">FixIt is a platform where we can build a better future. <br>Everyone is welcome to post their problems. <br> We offer fundraisers help in order to make the solution real.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-grid">
+                    <div class="feature-text">
+                        <h2>For a better community</h2>
+                        <p>Our goal is to make students' problems visible and help with solving them .</p>
+                    </div>
+                    <div class="feature-image">
+                        <img src="template-assets/images/features/community-icon-29131.png" class="communityImg" alt="Dashboard">
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-split">
+                <div class="feature-card">
+                    <img onclick="gotoPage('fundraisers.html')" src="template-assets/images/features/moneyJar.png" class="moneyJar imgBtn" alt="Cards" style="margin-bottom: 3.5rem;">
+                    <div class="feature-text">
+                        <h2 style="margin-bottom: 2rem;">Fundraising</h2>
+                        
+                        <div class="head-title">Why?</div>
+                        <div class="normal-text">We aim to solve our problems as students. <br> This space allows us to organize fundraisers that we know will help a good cause. <br> no large Companies , no profit margins.</div>
+                        <div class="head-title">Who will this help ?</div>
+                        <div class="normal-text">We aim to fix problems that strike the core of our life as uiversity students and to ensure a comfortable and safe environement.</div>
+                        
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                      <img onclick="gotoPage('complaints.html')" src="template-assets/images/features/clipboard.png" class="clipboard imgBtn" alt="Cards" style="margin-bottom: 3.5rem;">
+
+                    <div class="feature-text">
+                        <h2 style="margin-bottom: 2rem;">Reporting Problems</h2>
+
+                        <div class="head-title">How ?</div>
+                        <div class="normal-text">Each user (verified by their student ID card) will be able to post a complaint about certain topics (infrastructure , hygiene , lack of equipement, etc..)</div>
+                        <div class="head-title">Can anyone post anything ?</div>
+                        <div class="normal-text">Each complaint is verified by moderators , we try to focus on treatable problems we can collectively solve together.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer" id="c">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-links">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div style="flex: 1;">
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <img src="template-assets/images/footers/twitter.svg" alt="Twitter">
+                                <p>Follow us on Twitter for updates</p>
+                            </a>
+                            <a href="#" class="social-link">
+                                <img src="template-assets/images/footers/instagram.svg" alt="Instagram">
+                                <p>Follow us on Instagram for updates</p>
+                            </a>
+                            <a href="#" class="social-link">
+                                <img src="template-assets/images/footers/tiktok.svg" alt="TikTok">
+                                <p>Follow us on TikTok for updates</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom" name="c">
+                    <p>© 2025 Hide Bank</p>
+                    <div class="footer-legal">
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

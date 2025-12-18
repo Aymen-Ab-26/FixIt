@@ -1,0 +1,389 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: "Clash Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+background-color: #0e0f11;
+color: #ffffff;
+line-height: 1.5;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar {
+display: none;
+}
+
+.container {
+max-width: 1280px;
+margin: 0 auto;
+padding: 0 1rem;
+}
+
+header {
+position: relative;
+overflow: hidden;
+padding-bottom: 2rem;
+}
+
+.nav-wrapper {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top: 1.5rem;
+}
+
+.logo {
+font-size: 2rem;
+font-weight: bold;
+color: #09800d;
+}
+
+.nav-menu {
+display: flex;
+align-items: center;
+list-style: none;
+margin-right: 3rem;
+}
+
+.nav-menu li {
+margin-right: 3rem;
+}
+
+.nav-menu a {
+color: #ffffff;
+text-decoration: none;
+font-weight: 500;
+transition: opacity 0.3s;
+}
+
+.nav-menu a:hover {
+opacity: 0.9;
+}
+
+.page-header {
+text-align: center;
+padding: 3rem 0;
+}
+
+.page-title {
+font-size: 3.875rem;
+line-height: 1;
+letter-spacing: 3.6px;
+margin-bottom: 1rem;
+color: #ffffff;
+}
+
+.page-subtitle {
+color: #b0b0b0;
+max-width: 40rem;
+margin: 0 auto;
+font-size: 1.1rem;
+}
+
+.main-content {
+padding: 2rem 0 6rem;
+}
+
+.create-fundraiser-section {
+background: radial-gradient(72.2% 78.49% at 49.87% 50.1%, rgba(71, 80, 98, 0.26) 0%, rgba(137, 137, 137, 0) 100%);
+border: 1px solid rgba(61, 61, 61, 0.3);
+border-radius: 1.875rem;
+padding: 3rem;
+margin-bottom: 3rem;
+}
+
+.section-title {
+font-size: 2rem;
+margin-bottom: 2rem;
+color: #ffffff;
+text-align: center;
+}
+
+.form-group {
+margin-bottom: 1.5rem;
+}
+
+.form-label {
+display: block;
+margin-bottom: 0.5rem;
+color: #b0b0b0;
+font-weight: 500;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+width: 100%;
+padding: 1rem;
+background-color: rgba(255, 255, 255, 0.05);
+border: 1px solid rgba(61, 61, 61, 0.5);
+border-radius: 0.75rem;
+color: #ffffff;
+font-family: inherit;
+font-size: 1rem;
+transition: border-color 0.3s;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+outline: none;
+border-color: #09800d;
+}
+
+.form-textarea {
+min-height: 120px;
+resize: vertical;
+}
+
+.form-select option {
+background-color: #1a1b1e;
+color: #ffffff;
+}
+
+.form-row {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 1rem;
+}
+
+.btn-submit {
+display: block;
+width: 100%;
+padding: 1rem 2rem;
+background-color: #09800d;
+color: #000000;
+border: none;
+border-radius: 9999px;
+font-weight: 600;
+font-size: 1rem;
+cursor: pointer;
+transition: all 0.3s;
+}
+
+.btn-submit:hover {
+background-color: #13e01a;
+transform: translateY(-2px);
+}
+
+.fundraisers-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+gap: 1.5rem;
+min-height: 300px;
+}
+        
+.fundraisers-grid:has(.empty-state) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.fundraiser-card {
+background: radial-gradient(72.2% 78.49% at 49.87% 50.1%, rgba(71, 80, 98, 0.26) 0%, rgba(137, 137, 137, 0) 100%);
+border: 1px solid rgba(61, 61, 61, 0.3);
+border-radius: 1.875rem;
+padding: 2rem;
+transition: transform 0.3s, border-color 0.3s;
+display: flex;
+flex-direction: column;
+}
+
+.fundraiser-card:hover {
+transform: translateY(-4px);
+border-color: rgba(178, 230, 0, 0.3);
+}
+
+.fundraiser-header {
+margin-bottom: 1rem;
+}
+
+.fundraiser-title {
+font-size: 1.5rem;
+font-weight: 600;
+margin-bottom: 0.5rem;
+color: #ffffff;
+}
+
+.fundraiser-meta {
+display: flex;
+gap: 0.5rem;
+flex-wrap: wrap;
+margin-bottom: 1rem;
+}
+
+.fundraiser-category {
+display: inline-block;
+padding: 0.5rem 1rem;
+background-color: rgba(178, 230, 0, 0.2);
+color: #09800d;
+border-radius: 9999px;
+font-size: 0.875rem;
+font-weight: 600;
+}
+
+.fundraiser-uni {
+display: inline-block;
+padding: 0.5rem 1rem;
+background-color: rgba(100, 150, 255, 0.2);
+color: #6496ff;
+border-radius: 9999px;
+font-size: 0.875rem;
+font-weight: 600;
+}
+
+.fundraiser-description {
+color: #b0b0b0;
+margin-bottom: 1.5rem;
+line-height: 1.6;
+flex-grow: 1;
+}
+
+.progress-section {
+margin-bottom: 1.5rem;
+}
+
+.progress-header {
+display: flex;
+justify-content: space-between;
+margin-bottom: 0.5rem;
+}
+
+.amount-raised {
+color: #09800d;
+font-weight: 600;
+font-size: 1.25rem;
+}
+
+.goal-amount {
+color: #888888;
+font-size: 0.875rem;
+}
+
+.progress-bar {
+width: 100%;
+height: 10px;
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 9999px;
+overflow: hidden;
+margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+height: 100%;
+background: linear-gradient(90deg, #09800d 0%, #9ccc00 100%);
+border-radius: 9999px;
+transition: width 0.5s ease;
+}
+
+.supporters-count {
+color: #888888;
+font-size: 0.875rem;
+}
+
+.fundraiser-footer {
+display: flex;
+gap: 1rem;
+}
+
+.btn-donate {
+flex: 1;
+padding: 0.75rem 1.5rem;
+background-color: #09800d;
+color: #000000;
+border: none;
+border-radius: 9999px;
+font-weight: 600;
+cursor: pointer;
+transition: all 0.3s;
+}
+
+.btn-donate:hover {
+background-color: #9ccc00;
+transform: translateY(-2px);
+}
+
+.btn-support {
+flex: 1;
+padding: 0.75rem 1.5rem;
+background-color: transparent;
+color: #09800d;
+border: 2px solid #09800d;
+border-radius: 9999px;
+font-weight: 600;
+cursor: pointer;
+transition: all 0.3s;
+}
+
+.btn-support:hover {
+background-color: rgba(178, 230, 0, 0.1);
+}
+
+.btn-support.supported {
+background-color: rgba(178, 230, 0, 0.2);
+}
+
+.empty-state {
+text-align: center;
+padding: 4rem 2rem;
+color: #888888;
+}
+
+.empty-state-icon {
+font-size: 4rem;
+margin-bottom: 1rem;
+align-self: center;
+}
+
+.filter-section {
+display: flex;
+gap: 1rem;
+margin-bottom: 2rem;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.filter-btn {
+padding: 0.75rem 1.5rem;
+background-color: rgba(255, 255, 255, 0.05);
+color: #b0b0b0;
+border: 1px solid rgba(61, 61, 61, 0.3);
+border-radius: 9999px;
+font-weight: 500;
+cursor: pointer;
+transition: all 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+background-color: rgba(178, 230, 0, 0.2);
+color: #09800d;
+border-color: #09800d;
+}
+
+@media (max-width: 768px) {
+.page-title {
+    font-size: 2.5rem;
+}
+
+.create-fundraiser-section {
+    padding: 2rem 1.5rem;
+}
+
+.form-row {
+    grid-template-columns: 1fr;
+}
+
+.fundraisers-grid {
+    grid-template-columns: 1fr;
+}
+
+.fundraiser-footer {
+    flex-direction: column;
+}
+}

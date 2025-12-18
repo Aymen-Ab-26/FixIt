@@ -1,0 +1,4 @@
+id,topic,uni,description,date,relateCount,relate
+1,"Infrastructure","FST","The library's air conditioning system hasn't been working properly for weeks.","2025-12-15",23,false
+2,"Hygiene","ISTMT","The bathrooms in Building C are rarely cleaned and often run out of soap and paper towels.","2025-12-14",67,false
+3,"Equipment","HIDE","The computer lab is not open to students. Those of us with no computers struggle to finish their tasks.","2025-12-13",18,false

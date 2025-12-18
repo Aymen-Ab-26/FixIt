@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixIt - Student Complaints</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,300,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/complaintsStyle.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav-wrapper">
+                <a href="index.html" style="text-decoration: none;" class="logo">FixIt</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#complaints">Complaints</a></li>
+                </ul>
+            </nav>
+            
+            <div class="page-header">
+                <h1 class="page-title">Student Complaints</h1>
+                <p class="page-subtitle">Share your concerns and support others facing similar issues. Together, we can make our campus better.</p>
+            </div>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <div class="container">
+            <section class="create-complaint-section">
+                <h2 class="section-title">Submit a New Complaint</h2>
+                <form id="complaintForm">
+                    <div class="form-group">
+                        <label class="form-label" for="topic">Topic</label>
+                        <select class="form-select" id="topic" required>
+                            <option value="">Select a topic...</option>
+                            <option value="Infrastructure">Infrastructure</option>
+                            <option value="Hygiene">Hygiene</option>
+                            <option value="Equipment">Lack of Equipment</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="uni">University</label>
+                        <input type="text" id="uni" class="form-select">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="description">Description</label>
+                        <textarea class="form-textarea" id="description" placeholder="Describe the problem in detail..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Submit Complaint</button>
+                </form>
+            </section>
+            
+            <section id="complaints">
+                <h2 class="section-title">Recent Complaints</h2>
+                <div id="complaintsList" class="complaints-list">
+                    <!-- Complaints will be populated here -->
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="compCode.js"></script>
+</html>

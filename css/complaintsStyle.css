@@ -1,0 +1,270 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Clash Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #0e0f11;
+            color: #ffffff;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        header {
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 2rem;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 1.5rem;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color:  #09800d;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin-right: 3rem;
+        }
+
+        .nav-menu li {
+            margin-right: 3rem;
+        }
+
+        .nav-menu a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        .nav-menu a:hover {
+            opacity: 0.9;
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .page-title {
+            font-size: 3.875rem;
+            line-height: 1;
+            letter-spacing: 3.6px;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .page-subtitle {
+            color: #b0b0b0;
+            max-width: 40rem;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        .main-content {
+            padding: 2rem 0 6rem;
+        }
+
+        .create-complaint-section {
+            background: radial-gradient(72.2% 78.49% at 49.87% 50.1%, rgba(71, 80, 98, 0.26) 0%, rgba(137, 137, 137, 0) 100%);
+            border: 1px solid rgba(61, 61, 61, 0.3);
+            border-radius: 1.875rem;
+            padding: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #b0b0b0;
+            font-weight: 500;
+        }
+
+        .form-select,
+        .form-textarea {
+            width: 100%;
+            padding: 1rem;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(61, 61, 61, 0.5);
+            border-radius: 0.75rem;
+            color: #ffffff;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-select:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color:  #09800d;
+        }
+
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-select option {
+            background-color: #1a1b1e;
+            color: #ffffff;
+        }
+
+        .btn-submit {
+            display: block;
+            width: 100%;
+            padding: 1rem 2rem;
+            background-color:  #09800d;
+            color: #000000;
+            border: none;
+            border-radius: 9999px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color:  #10c216;
+            transform: translateY(-2px);
+        }
+
+        .complaints-list {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .complaint-card {
+            background: radial-gradient(72.2% 78.49% at 49.87% 50.1%, rgba(71, 80, 98, 0.26) 0%, rgba(137, 137, 137, 0) 100%);
+            border: 1px solid rgba(61, 61, 61, 0.3);
+            border-radius: 1.875rem;
+            padding: 2rem;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .complaint-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(178, 230, 0, 0.3);
+        }
+
+        .complaint-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .complaint-topic {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: rgba(178, 230, 0, 0.2);
+            color:  #09800d;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .complaint-date {
+            color: #888888;
+            font-size: 0.875rem;
+        }
+
+        .complaint-description {
+            color: #b0b0b0;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .complaint-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .relate-count {
+            color: #888888;
+            font-size: 0.875rem;
+        }
+
+        .btn-relate {
+            padding: 0.75rem 1.5rem;
+            background-color: transparent;
+            color:  #09800d;
+            border: 2px solid  #09800d;
+            border-radius: 9999px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-relate:hover {
+            background-color:  #09800d;
+            color: #000000;
+        }
+
+        .btn-relate.related {
+            background-color:  #09800d;
+            color: #000000;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: #888888;
+        }
+
+        .empty-state-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2.5rem;
+            }
+
+            .create-complaint-section {
+                padding: 2rem 1.5rem;
+            }
+
+            .complaint-card {
+                padding: 1.5rem;
+            }
+        }
